@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class Services {
+public class ProductService {
     @Autowired
 private ProductRepository repository;
 
@@ -29,7 +29,7 @@ public List<Product> findProducts(){
 }
 public String deleteProductById(int id){
         repository.deleteById(id);
-        return id + "Product Removed!";
+        return  "Product" +id +"Removed!";
 }
 public String deleteProducts(){
         repository.deleteAll();
@@ -37,10 +37,11 @@ public String deleteProducts(){
 }
 public Product updateProduct(Product product){
 Product existing = repository.findById(product.getId()).orElse(null);
-existing.setName(product.getName());
+    assert existing != null;
+    existing.setName(product.getName());
 existing.setPrice(product.getPrice());
 existing.setQuantity(product.getQuantity());
-return existing;
+return repository.save(existing);
 }
 
 }
