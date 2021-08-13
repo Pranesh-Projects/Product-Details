@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Setter
 @ToString
 
-@Table(name = "product_details")
+//@Table(name = "product_details")
 
 @Entity
 public class Product {
@@ -19,5 +19,5 @@ public class Product {
     private int id;
     private String name;
     private int quantity;
-private double price;
+    private double price;
 }
