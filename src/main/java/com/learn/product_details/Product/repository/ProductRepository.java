@@ -1,6 +1,6 @@
-package com.learn.product_details.repository;
+package com.learn.product_details.Product.repository;
 
-import com.learn.product_details.model.Product;
+import com.learn.product_details.Product.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Integer> {

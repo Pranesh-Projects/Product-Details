@@ -1,7 +1,7 @@
-package com.learn.product_details.controller;
+package com.learn.product_details.Product.controller;
 
-import com.learn.product_details.model.Product;
-import com.learn.product_details.service.ProductService;
+import com.learn.product_details.Product.model.Product;
+import com.learn.product_details.Product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.learn.product_details.model;
+package com.learn.product_details.Product.model;
 
 import lombok.*;
 

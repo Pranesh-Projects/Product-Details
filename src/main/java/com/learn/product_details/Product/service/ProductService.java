@@ -1,7 +1,7 @@
-package com.learn.product_details.service;
+package com.learn.product_details.Product.service;
 
-import com.learn.product_details.model.Product;
-import com.learn.product_details.repository.ProductRepository;
+import com.learn.product_details.Product.model.Product;
+import com.learn.product_details.Product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
