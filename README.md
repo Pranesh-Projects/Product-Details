@@ -1,6 +1,4 @@
 # Product-Details
-Simple Spring Boot Project to store the product details like name, quantity, price in repository
+Spring Boot Project to store, view, delete and update product details name, quantity, price in MySQL Database
 
-A Project to Add, Find, Delete and Update products in MySQL Database
-
-I use 'Postman' for testing, 'MySQL' for database and 'Intellij IDEA' for IDE
+I used 'Postman' for testing, 'MySQL' for database and 'Intellij IDEA' for IDE
