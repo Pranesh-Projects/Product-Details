@@ -1,9 +1,12 @@
 spring:
   datasource:
-    username: sql6439639
-    password: UxqzJUbFQx
+    #    username: root
+    #    password: root
+    #    url: jdbc:mysql://localhost:3306/product_details
+    username: urfeyteyg6phj96o
+    password: H9mWE5HJnlFL8wb5LqJN
+    url: jdbc:mysql://buijr3bjvszzqst5rmki-mysql.services.clever-cloud.com:3306/buijr3bjvszzqst5rmki
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://sql6.freesqldatabase.com:3306/sql6439639
   jpa:
     show-sql: true
     hibernate:

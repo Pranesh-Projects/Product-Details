@@ -2,7 +2,6 @@ package com.learn.product_details.Product.controller;
 
 import com.learn.product_details.Product.model.Product;
 import com.learn.product_details.Product.service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,8 +9,11 @@ import java.util.List;
 @RestController
 public class ProductController {
 
-    @Autowired
-    private ProductService service;
+    private final ProductService service;
+
+    public ProductController(ProductService service) {
+        this.service = service;
+    }
 
     @PostMapping("/addProduct")
     public Product postProduct(@RequestBody Product product) {

@@ -10,14 +10,17 @@ import javax.persistence.*;
 @Setter
 @ToString
 
-//@Table(name = "product_details")
-
 @Entity
+@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "product_id")
     private int id;
+    @Column(name = "product_name")
     private String name;
+    @Column(name = "quantity")
     private int quantity;
+    @Column(name = "price")
     private double price;
 }
